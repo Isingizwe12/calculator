@@ -9,41 +9,44 @@
 </head>
 <body>
    <main class="bg-gray-200 flex justify-center items-center h-screen">
-    <div class="bg-slate-800 w-1/4 h-auto mt-20 shadow-lg rounded-lg">
+    <div class="bg-slate-800 w-1/4 ax-h-[90vh]  shadow-lg rounded-lg">
         <input type="text" disabled id="output-input" class="border border-gray-300 rounded-lg p-12 m-4 w-11/12 text-gray-200" >
         <div class="grid grid-cols-4 gap-4 p-4">
-            <button  class="bg-gray-200 p-4 rounded-lg ">AC</button>
-            <button  class="bg-gray-200 p-4 rounded-lg">/</button>
-            <button  class="bg-gray-200 p-4 rounded-lg">%</button>
+            <button id="ac-btn" class="bg-gray-200 p-4 rounded-lg ">AC</button>
+            <button id="del-btn" class="bg-gray-200 p-4 rounded-lg">Del</button>
+            <button id="modu-btn" class="bg-gray-200 p-4 rounded-lg">%</button>
             <button id="add-btn" class="bg-yellow-300 p-4 rounded-lg ">+</button>
         </div>
         <div class="grid grid-cols-4 gap-4 p-4">
             <button id="btn7" class="bg-gray-200 p-4 rounded-lg number-btn">7</button>
             <button id="btn8" class="bg-gray-200 p-4 rounded-lg number-btn">8</button>
             <button id="btn9" class="bg-gray-200 p-4 rounded-lg number-btn">9</button>
-            <button  class="bg-yellow-300 p-4 rounded-lg">-</button>
+            <button id="sub-btn" class="bg-yellow-300 p-4 rounded-lg">-</button>
       
     </div>
         <div class="grid grid-cols-4 gap-4 p-4">
             <button id="btn4" class="bg-gray-200 p-4 rounded-lg number-btn">4</button>
             <button id="btn5" class="bg-gray-200 p-4 rounded-lg number-btn">5</button>
             <button id="btn6" class="bg-gray-200 p-4 rounded-lg number-btn">6</button>
-            <button  class="bg-yellow-300 p-4 rounded-lg">*</button>
+            <button id="mul-btn" class="bg-yellow-300 p-4 rounded-lg">*</button>
         </div>
         <div class="grid grid-cols-4 gap-4 p-4">
             <button id="btn1" class="bg-gray-200 p-4 rounded-lg number-btn">1</button>
             <button id="btn2" class="bg-gray-200 p-4 rounded-lg number-btn">2</button>
             <button id="btn3" class="bg-gray-200 p-4 rounded-lg number-btn">3</button>
-            <button id="equal-btn" class="bg-yellow-300 p-4 rounded-lg">=</button>
+            <button id="divi-btn" class="bg-yellow-300  p-4 rounded-lg">/</button>
+            
         </div>
-        <div class="grid grid-cols-2 gap-4 p-4">
+        <div class="grid grid-cols-3 gap-4 p-4">
             <button id="btn0" class="bg-gray-200 p-4 rounded-lg number-btn">0</button>
-            <button  class="bg-gray-200 p-4 rounded-lg">.</button>
+            <button id="dot-btn" class="bg-gray-200 p-4 rounded-lg">.</button>
+            <button id="equal-btn" class="bg-yellow-300 p-4 rounded-lg">=</button>
         </div>
     </div>
    </main> 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
 
    <script src="script.js"></script>
 </body>
